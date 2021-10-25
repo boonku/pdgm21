@@ -25,7 +25,6 @@ lengthOfList(List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)) == 10
 //zadanie 3
 def joinLists[A](list1: List[A], list2: List[A]): List[A] =
   (list1, list2) match
-    case (Nil, Nil) => Nil
     case (_, Nil) => list1
     case (Nil, _) => list2
     case (h1::t1, h2::t2) => h1 :: h2 :: joinLists(t1, t2)

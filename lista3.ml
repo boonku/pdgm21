@@ -25,7 +25,6 @@ lengthOfList([1; 2; 3; 4; 5; 6; 7; 8; 9; 10]) = 10;;
 (* zadanie 3 *)
 let rec joinLists(list1, list2) =
     match (list1, list2) with
-            ([], []) -> []
         |   (_ , []) -> list1
         |   ([], _)  -> list2
         |   (h1::t1, h2::t2) -> h1 :: h2 :: joinLists(t1, t2);;
